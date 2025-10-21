@@ -32,4 +32,42 @@ Think of it as a lightweight, platform-agnostic “TweetDeck” — built for cr
 
 ## ⚙️ Setup (coming soon)
 
+---
+
+## 🧠 Roadmap
+
+| Phase | Goal | Status |
+|-------|------|--------|
+| Phase 0 | MVP: Feed aggregation (oEmbed APIs for TikTok, IG, Threads, X) | 🟡 In Progress |
+| Phase 1 | Multi-column dashboard + saved layouts | ⏳ Planned |
+| Phase 2 | Analytics layer (post activity, keyword alerts) | ⏳ Planned |
+| Phase 3 | BYO Feed (Zapier / Sheets integration) | ⏳ Planned |
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** [Next.js](https://nextjs.org) + [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Data fetching:** [TanStack Query](https://tanstack.com/query/latest)
+- **Platform integrations:** Public [oEmbed](https://oembed.com/) endpoints (TikTok, Instagram, Threads, X)
+- **Hosting:** [Vercel](https://vercel.com)
+
+---
+
+## 🔒 Privacy & Compliance
+
+Creator Pulse only displays publicly available content via official oEmbed APIs.  
+No scraping, credentialed access, or internal Meta data sources are used.  
+This ensures full compliance with each platform’s developer terms.
+
+---
+
+## 🧩 About
+
+Created and maintained by **Mike Johnson**  
+Built independently as a personal full-stack learning project and product experiment.  
+_“Learning by building — one feature at a time.”_
+
+---
 
