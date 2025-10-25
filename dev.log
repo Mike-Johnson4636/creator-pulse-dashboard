@@ -1,0 +1,66 @@
+
+> creator-pulse-dashboard@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.6
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.207:3000
+
+ ✓ Starting...
+   Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc" https://nextjs.org/docs/messages/swc-disabled
+   `compiler` options in `next.config.js` will be ignored while using Babel https://nextjs.org/docs/messages/ignored-compiler-options
+ ✓ Ready in 894ms
+   Using external babel configuration from /Users/blaze/Documents/www-projects/creator-pulse-dashboard/.babelrc
+ ○ Compiling / ...
+[BABEL] Note: The code generator has deoptimised the styling of /Users/blaze/Documents/www-projects/creator-pulse-dashboard/node_modules/next/dist/compiled/next-devtools/index.js as it exceeds the max of 500KB.
+[BABEL] Note: The code generator has deoptimised the styling of /Users/blaze/Documents/www-projects/creator-pulse-dashboard/node_modules/next/dist/compiled/next-devtools/index.js as it exceeds the max of 500KB.
+ ⨯ ./src/app/page.tsx
+SyntaxError: Could not resolve the path to the imported file.
+Please ensure that the theme file has a .stylex.js or .stylex.ts extension and follows the
+rules for defining variables:
+
+https://stylexjs.com/docs/learn/theming/defining-variables/#rules-when-defining-variables
+
+   6 |
+   7 |
+>  8 | import { vars } from './styles/tokens.stylex';
+     |          ^^^^
+   9 |
+  10 |
+  11 |
+Import trace for requested module:
+./src/app/page.tsx
+ ⨯ ./src/app/page.tsx
+SyntaxError: Could not resolve the path to the imported file.
+Please ensure that the theme file has a .stylex.js or .stylex.ts extension and follows the
+rules for defining variables:
+
+https://stylexjs.com/docs/learn/theming/defining-variables/#rules-when-defining-variables
+
+   6 |
+   7 |
+>  8 | import { vars } from './styles/tokens.stylex';
+     |          ^^^^
+   9 |
+  10 |
+  11 |
+Import trace for requested module:
+./src/app/page.tsx
+[BABEL] Note: The code generator has deoptimised the styling of /Users/blaze/Documents/www-projects/creator-pulse-dashboard/node_modules/next/dist/compiled/next-devtools/index.js as it exceeds the max of 500KB.
+ ⨯ ./src/app/page.tsx
+SyntaxError: Could not resolve the path to the imported file.
+Please ensure that the theme file has a .stylex.js or .stylex.ts extension and follows the
+rules for defining variables:
+
+https://stylexjs.com/docs/learn/theming/defining-variables/#rules-when-defining-variables
+
+   6 |
+   7 |
+>  8 | import { vars } from './styles/tokens.stylex';
+     |          ^^^^
+   9 |
+  10 |
+  11 |
+Import trace for requested module:
+./src/app/page.tsx
+ GET / 500 in 12408ms
