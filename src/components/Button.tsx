@@ -1,6 +1,6 @@
 'use client';
 import * as stylex from '@stylexjs/stylex';
-import { vars } from '@/app/styles/tokens.stylex.js';
+import { vars } from '@/styles/tokens.stylex.js';
 
 const styles = stylex.create({
   base: {
@@ -9,7 +9,10 @@ const styles = stylex.create({
     justifyContent: 'center',
     padding: `${vars.spaceSm} ${vars.spaceLg}`,
     borderRadius: vars.radius,
-    border: `1px solid ${vars.surfaceAlt}`,
+    // Split border into individual properties
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: vars.surfaceAlt,
     backgroundColor: vars.surface,
     color: vars.text,
     fontWeight: 600,
@@ -18,7 +21,11 @@ const styles = stylex.create({
     ':hover': { transform: 'translateY(-1px)', backgroundColor: vars.surfaceAlt },
     ':active': { transform: 'translateY(0px)' },
   },
-  primary: { backgroundColor: vars.brand, borderColor: vars.brand, color: '#fff' },
+  primary: { 
+    backgroundColor: vars.brand, 
+    borderColor: vars.brand,  // already using individual property here
+    color: '#fff' 
+  },
   subtle: {},
 });
 
@@ -28,7 +35,7 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export default function Button({ tone = 'subtle', children, ...rest }: Props) {
   return (
-    <button {...stylex.props(styles.base, tone === 'primary' ? styles.primary : styles.subtle)} {...rest}>
+    <button {...rest} {...stylex.props(styles.base, tone && styles[tone])}>
       {children}
     </button>
   );

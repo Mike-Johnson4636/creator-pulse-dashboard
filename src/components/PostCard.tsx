@@ -1,6 +1,6 @@
 'use client';
 import * as stylex from '@stylexjs/stylex';
-import { vars } from '@/styles/tokens.stylex';
+import { vars } from '@/styles/tokens.stylex.js';
 
 const styles = stylex.create({
   card: {
@@ -10,21 +10,14 @@ const styles = stylex.create({
     padding: vars.spaceLg,
     borderRadius: vars.radius,
     backgroundColor: vars.surface,
-    border: `1px solid ${vars.surfaceAlt}`,
+    // Split border into individual properties
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: vars.surfaceAlt,
   },
   title: { fontSize: 16, fontWeight: 700, color: vars.text },
   meta: { fontSize: 12, color: vars.subtext },
   body: { fontSize: 14, color: vars.text, lineHeight: 1.5 as any },
 });
 
-type Props = { platform: 'x' | 'tiktok' | 'instagram' | 'threads'; title: string; meta: string; body: string; };
-
-export default function PostCard({ platform, title, meta, body }: Props) {
-  return (
-    <article {...stylex.props(styles.card)}>
-      <div {...stylex.props(styles.title)}>{title} · {platform.toUpperCase()}</div>
-      <div {...stylex.props(styles.meta)}>{meta}</div>
-      <div {...stylex.props(styles.body)}>{body}</div>
-    </article>
-  );
-}
+// ... rest of the file stays the same

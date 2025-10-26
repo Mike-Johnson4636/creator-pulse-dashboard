@@ -2,7 +2,12 @@ import * as stylex from '@stylexjs/stylex';
 import Stack from '@/components/Stack';
 import Button from '@/components/Button';
 import PostCard from '@/components/PostCard';
-import { vars } from '@/styles/tokens.stylex';
+// import { TOKENS as vars } from '@/styles/tokens.stylex';
+// import { TOKENS as vars } from '@/styles/tokens.stylex.ts';
+// import { TOKENS as vars } from '../styles/tokens.stylex'; 
+// import { vars } from '@/styles/tokens.stylex';
+//import { vars } from '@/styles/tokens.stylex.js';
+import { vars } from '@/styles/tokens.stylex.js';
 
 
 const styles = stylex.create({
