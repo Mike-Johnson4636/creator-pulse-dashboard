@@ -32,3 +32,42 @@ Creator Pulse Dashboard is a personal build to prove I can design and ship data-
     spaceMd: '12px',
     // ...
   });
+
+## 🧱 Working Baseline (v1)
+
+This baseline represents the first **fully functional Next.js + StyleX + Babel** configuration that successfully rendered without runtime errors.  
+Use this setup as the foundation for all future app builds.
+
+---
+
+### ✅ Core Stack
+- **Framework:** Next.js 15 (App Router)
+- **Compiler:** Babel (SWC disabled)
+- **Styling:** StyleX v0.16
+- **Language:** TypeScript
+- **Module Alias:** `@` → `/src`
+- **Runtime:** Node 18+
+
+---
+
+### ⚙️ Key Configuration Highlights
+
+#### 1. `babel.config.js`
+Must include:
+```js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['next/babel', '@babel/preset-typescript'],
+    plugins: [
+      ['@stylexjs/babel-plugin', {
+        runtimeInjection: true,
+        dev: process.env.NODE_ENV !== 'production',
+      }],
+      ['module-resolver', {
+        alias: { '@': './src' },
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      }],
+    ],
+  };
+};

@@ -1,9 +1,0 @@
-{
-  "presets": ["next/babel"],
-  "plugins": [
-    ["@stylexjs/babel-plugin", {
-      "dev": true,
-      "genConditionalClasses": true
-    }]
-  ]
-}
