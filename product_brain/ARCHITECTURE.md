@@ -16,12 +16,12 @@ Creator Pulse Dashboard is a personal build to prove I can design and ship data-
 ## Project layout
 - `src/app` → routes/pages (e.g. `page.tsx`, `layout.tsx`)
 - `src/components` → UI components (Button, Stack, PostCard)
-- `src/styles/tokens.stylex.ts` → design tokens via `stylex.defineVars`
+- `src/styles/tokens.stylex.js` → design tokens via `stylex.defineVars`
 - `config/` → project-level config, flags
 - `product_brain/` → docs like this (how I think, how I prioritize)
 
 ## Styling system (important)
-- We use StyleX with tokens in `src/styles/tokens.stylex.ts`
+- We use StyleX with tokens in `src/styles/tokens.stylex.js`
 - Tokens are exported like:
   ```ts
   import * as stylex from '@stylexjs/stylex';

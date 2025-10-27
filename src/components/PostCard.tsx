@@ -17,7 +17,7 @@ const styles = stylex.create({
   },
   title: { fontSize: 16, fontWeight: 700, color: vars.text },
   meta: { fontSize: 12, color: vars.subtext },
-  body: { fontSize: 14, color: vars.text, lineHeight: 1.5 as any },
+  body: { fontSize: 14, color: vars.text, lineHeight: '1.5' },
 });
 
 type Props = {
