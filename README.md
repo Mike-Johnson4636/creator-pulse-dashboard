@@ -47,3 +47,8 @@ This project is part of a self-directed bootcamp to bridge **data science, desig
 
 ## 📂 Current Folder Structure
 
+
+## 📘 Documentation
+- [Project Setup Notes](docs/PROJECT_SETUP_NOTES.md)
+- [Orion Agent Guide](docs/orion.md)
+- [Vision Agent Roadmap](docs/VISION_AGENT_README.md)
